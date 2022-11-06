@@ -20,8 +20,8 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_boilerplate_block_init() {
+function blocks_course_to_do_list_block_init() {
 	register_block_type( __DIR__ . '/build/to-do-list' );
 	register_block_type( __DIR__ . '/build/to-do-list-info' );
 }
-add_action( 'init', 'create_block_boilerplate_block_init' );
+add_action( 'init', 'blocks_course_to_do_list_block_init' );
