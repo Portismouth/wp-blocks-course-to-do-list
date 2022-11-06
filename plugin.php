@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name:       Boilerplate
- * Description:       Example block scaffolded with Create Block tool.
+ * Plugin Name:       To Do List
+ * Description:       Info about the to do list in the data store.
  * Requires at least: 5.9
  * Requires PHP:      7.0
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            Ozzy Gonzalez
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       boilerplate
+ * Text Domain:       to-do-list
  *
- * @package           create-block
+ * @package           to-do-list
  */
 
 /**
@@ -21,6 +21,7 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_boilerplate_block_init() {
-	register_block_type( __DIR__ . '/build' );
+	register_block_type( __DIR__ . '/build/to-do-list' );
+	register_block_type( __DIR__ . '/build/to-do-list-info' );
 }
 add_action( 'init', 'create_block_boilerplate_block_init' );
